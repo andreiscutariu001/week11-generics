@@ -32,4 +32,20 @@ namespace CalculatorApp
     {
         T Add(T p);
     }
+
+    public class GenericTypeClass<T> // T poate fi folisit in toata clasa ca si tip
+    {
+        public void Method(T param)
+        {
+
+        }
+    }
+
+    public class GenericTypeClass2
+    {
+        public void Method<T>(T param) // T poate fi folisit doar in metoda curenta
+        {
+
+        }
+    }
 }
